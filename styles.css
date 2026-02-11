@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+:root{
+  --bg:#f6efe7;
+  --coffee:#3b2a1f;
+  --gold:#caa24a;
+}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+
+  background:#000;   /* 🔥 negro a los lados */
+  color:var(--coffee);
+}
+
+#app{
+  max-width: 980px;     /* 🔥 ancho de página */
+  margin: 0 auto;       /* 🔥 centrado */
+  background: var(--bg); /* fondo beige interior */
+  min-height: 100vh;
+}
+
+/* 🔥 FULL WIDTH IMÁGENES */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* CTA */
+#ctaContainer{
+  padding:28px 20px;
+}
+
+.buy-btn{
+  display:block;
+  width:100%;
+  background:var(--gold);
+  padding:18px;
+  border-radius:14px;
+  text-align:center;
+  text-decoration:none;
+  font-weight:700;
+  color:#2b1b10;
+  font-size:18px;
+}
+
+/* ===== FAQ CENTRADO PRO ===== */
+#faq{
+  background:#fff;
+  padding: 70px 20px;
+  display:flex;
+  justify-content:center;   /* 🔥 centra todo */
+}
+
+/* contenedor centrado */
+.faq-wrap{
+  width:100%;
+  max-width: 920px;         /* 🔥 ancho elegante */
+}
+
+/* titulo */
+#faq h2{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size: 46px;
+  letter-spacing:.06em;
+  margin-bottom: 36px;
+  color: var(--coffee);
+}
+
+/* lista */
+.faq-list{
+  border-top:1px solid #eee;
+  background:#fff;
+}
+
+/* fila */
+.faq-row{
+  border-bottom:1px solid #eee;
+}
+
+/* boton clickable */
+.faq-btn{
+  width:100%;
+  padding:20px 14px;
+  background:transparent;
+  border:0;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  cursor:pointer;
+}
+
+/* icono cuadrado elegante */
+.faq-icon{
+  width:38px;
+  height:38px;
+  border-radius:10px;
+  background:#f3efe8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+}
+
+.faq-icon svg{
+  width:18px;
+  height:18px;
+  stroke: var(--coffee);
+}
+
+/* pregunta */
+.faq-q{
+  flex:1;
+  text-align:left;
+  font-weight:700;
+  font-size:16px;
+  color:var(--coffee);
+}
+
+/* flecha derecha */
+.faq-arrow{
+  transition:.2s ease;
+  font-size:18px;
+  opacity:.6;
+}
+
+/* respuesta */
+.faq-a{
+  display:none;
+  padding: 0 16px 22px 70px;
+  font-size:14px;
+  color:#4b3c30;
+  line-height:1.55;
+}
+
+/* abierto */
+.faq-row.open .faq-a{
+  display:block;
+}
+
+.faq-row.open .faq-arrow{
+  transform: rotate(180deg);
+}
+
+/* mobile */
+@media(max-width:600px){
+  #faq h2{ font-size:32px; }
+}
+
+/* ====== OFFER SECTION (2 columnas) ====== */
+.offer-wrap{
+  background: #fff;
+  padding: 28px 18px;
+}
+
+.offer-grid{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.offer-left{
+  background: #f7f2ec;
+  border-radius: 18px;
+  padding: 18px;
+  display:flex;
+  justify-content:center;
+}
+
+.offer-left img{
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display:block;
+}
+
+.offer-right{
+  padding: 6px 4px;
+}
+
+.small-muted{
+  font-size: 12px;
+  opacity: .65;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.offer-title{
+  font-family:'Playfair Display',serif;
+  font-size: 36px;
+  line-height: 1.05;
+  margin: 10px 0 10px;
+  color: var(--coffee);
+}
+
+.offer-subtitle{
+  font-size: 15px;
+  opacity: .85;
+  margin: 0 0 14px;
+}
+
+.price-row{
+  display:flex;
+  gap: 12px;
+  align-items: baseline;
+  margin: 12px 0 10px;
+}
+
+.price-old{
+  text-decoration: line-through;
+  opacity:.55;
+  font-size: 16px;
+}
+
+.price-new{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  background:#eef2f0;
+  color:#2f3c35;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  margin: 6px 0 8px;
+}
+
+.urgency{
+  margin: 10px 0 14px;
+  font-weight: 600;
+  opacity: .9;
+}
+
+.add-cart{
+  display:block;
+  width: 100%;
+  padding: 16px 14px;
+  border-radius: 10px;
+  text-align:center;
+  text-decoration:none;
+  font-weight: 700;
+  background: #3f6b2a; /* similar al verde de referencia */
+  color: #fff;
+  margin: 14px 0 12px;
+}
+
+.viewing{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+  font-size: 14px;
+  opacity: .85;
+  margin: 8px 0 16px;
+}
+
+.timer-box{
+  border: 1px solid #efe3d1;
+  background: #fbf6ee;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 12px 0 16px;
+}
+
+.timer-title{
+  text-align:center;
+  font-weight: 800;
+  color: var(--coffee);
+  margin: 0 0 6px;
+}
+
+.timer-sub{
+  text-align:center;
+  margin: 0 0 12px;
+  opacity:.85;
+  font-size: 13px;
+}
+
+.timer-row{
+  display:flex;
+  justify-content:center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.time-pill{
+  min-width: 76px;
+  text-align:center;
+  border: 2px solid #d2b07a;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 8px;
+}
+
+.time-num{
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.time-label{
+  font-size: 11px;
+  opacity: .65;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.timer-cta{
+  display:block;
+  width:100%;
+  text-align:center;
+  background: var(--gold);
+  color: #2b1b10;
+  text-decoration:none;
+  font-weight: 800;
+  border-radius: 12px;
+  padding: 12px 10px;
+}
+
+.guarantee{
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
+
+.guarantee-title{
+  font-weight: 800;
+  margin: 0 0 6px;
+  color: #9a7a33;
+}
+
+.guarantee-text{
+  margin: 0;
+  opacity: .8;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .offer-grid{ grid-template-columns: 1fr; }
+  .offer-title{ font-size: 32px; }
+}
+.bonuses-wrap{
+  background:#fff;
+  padding: 46px 16px;
+}
+
+.bonuses-grid{
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 18px;
+}
+
+/* Card vertical */
+.bonusV{
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #eee;
+  box-shadow: 0 12px 26px rgba(0,0,0,.06);
+  background:#fff;
+  cursor:pointer;
+}
+
+/* Imagen vertical (altura fija para que quede parejo) */
+/* ===== IMAGEN COMPLETA SIN CORTES ===== */
+.bonusV-media{
+  position:relative;
+  height: 340px;              /* alto fijo elegante */
+  background:#f3efe8;         /* fondo beige café */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+}
+
+.bonusV-media img{
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain;         /* 🔥 CLAVE */
+  display:block;
+}
+
+/* Overlay descripción (oculto) */
+.bonusV-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:flex-end;
+  padding: 16px;
+  background: linear-gradient(transparent, rgba(0,0,0,.65));
+  opacity:0;
+  transition: opacity .18s ease;
+}
+
+.bonusV-desc{
+  color:#fff;
+  font-size:14px;
+  line-height:1.35;
+}
+
+/* Header tag arriba */
+.bonusV-tag{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background: rgba(255,255,255,.9);
+  color: var(--coffee);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Footer subtítulo abajo */
+.bonusV-footer{
+  padding: 12px 14px 14px;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--coffee);
+}
+
+/* Hover: mostrar descripción */
+.bonusV:hover .bonusV-overlay{
+  opacity:1;
+}
+.bonusV:hover img{
+  transform: scale(1.02);
+  filter: brightness(.82);
+}
+
+/* Móvil */
+@media (max-width: 800px){
+  .bonuses-grid{ grid-template-columns: 1fr; }
+  .bonusV-media{ height: 360px; }
+}
+/* =========================
+   BOTÓN COMPRA GRANDE PRO
+========================= */
+.buy-animated{
+  display:block;                /* 🔥 clave para centrar */
+  width: 90%;                  /* 🔥 más ancho */
+  max-width: 620px;            /* límite elegante desktop */
+
+  margin: 28px auto;           /* 🔥 centrado real */
+
+  padding: 22px 32px;          /* más alto */
+  font-size: 22px;             /* más grande */
+  font-weight: 900;
+
+  text-align:center;
+  text-decoration:none;
+  color:#2b1b10;
+
+  border-radius: 18px;
+
+  background: linear-gradient(135deg,#e5c27a,#caa24a);
+
+  box-shadow:
+    0 14px 32px rgba(202,162,74,.45),
+    0 0 0 0 rgba(202,162,74,.6);
+
+  position: relative;
+  overflow:hidden;
+
+  transition: transform .2s ease, box-shadow .2s ease;
+
+  animation: pulseGlow 1.6s infinite;
+}
+
+
+/* elevación al hover */
+.buy-animated:hover{
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 44px rgba(202,162,74,.6);
+}
+
+/* =========================
+   PULSO DORADO
+========================= */
+@keyframes pulseGlow{
+  0%{
+    box-shadow:
+      0 14px 32px rgba(202,162,74,.45),
+      0 0 0 0 rgba(202,162,74,.55);
+  }
+  70%{
+    box-shadow:
+      0 14px 32px rgba(202,162,74,.45),
+      0 0 0 26px rgba(202,162,74,0);
+  }
+  100%{
+    box-shadow:
+      0 14px 32px rgba(202,162,74,.45),
+      0 0 0 0 rgba(202,162,74,0);
+  }
+}
+
+
+/* =========================
+   BRILLO DESLIZANTE PREMIUM
+========================= */
+.buy-animated::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:60%;
+  height:100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.5),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine{
+  0%{ left:-120%; }
+  60%{ left:120%; }
+  100%{ left:120%; }
+}
+
+/* =========================
+   ANIMACIÓN BONITA
+========================= */
+
+/* pulso exterior */
+@keyframes pulseGlow{
+  0%{
+    box-shadow:
+      0 12px 30px rgba(202,162,74,.45),
+      0 0 0 0 rgba(202,162,74,.55);
+  }
+  70%{
+    box-shadow:
+      0 12px 30px rgba(202,162,74,.45),
+      0 0 0 20px rgba(202,162,74,0);
+  }
+  100%{
+    box-shadow:
+      0 12px 30px rgba(202,162,74,.45),
+      0 0 0 0 rgba(202,162,74,0);
+  }
+}
+
+
+/* brillo deslizante (efecto premium) */
+.buy-animated::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:60%;
+  height:100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.45),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine{
+  0%{ left:-120%; }
+  60%{ left:120%; }
+  100%{ left:120%; }
+}
+
+/* =========================
+   WHATSAPP FLOATING
+========================= */
+.whatsapp-float{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+  z-index:9999;
+  animation: floatBounce 2.2s infinite;
+}
+
+.whatsapp-float svg{
+  width:30px;
+  height:30px;
+  fill:white;
+}
+
+@keyframes floatBounce{
+  0%,100%{ transform: translateY(0); }
+  50%{ transform: translateY(-6px); }
+}
+html, body{
+  overflow-x: hidden;
+}
+/* FIX overflow por padding/borders */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/* Asegura que los botones no se salgan */
+.offer-right{
+  overflow: hidden; /* por si algún px se escapa */
+}
+
+.add-cart,
+.timer-cta{
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}

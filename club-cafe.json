@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "El Club del Café"
+  },
+
+  "links": {
+    "buy": "https://pay.hotmart.com/F104388713V?checkoutMode=10"
+  },
+
+  "offer": {
+    "heroImage": "/imagenes/portada.png",
+    "downloadsText": "+2442 DESCARGAS",
+    "title": "EL CLUB DEL CAFÉ:",
+    "subtitle": "La Guía Definitiva",
+    "currency": "$.",
+    "priceOld": "40.00",
+    "priceNew": "18.00",
+    "badgeText": "Oferta 🔥 - 50% OFF (Solo 10 cupos)",
+    "urgencyText": "⚡ ¡Últimos 3 cupos en Oferta!",
+    "viewingText": "56 personas están viendo",
+
+    "timer": {
+      "enabled": true,
+      "minutes": 15,
+      "key": "club-cafe-15m",
+      "title": "¡OFERTA SOLO POR HOY!",
+      "subtitle": "Tu lugar estará reservado por 15 minutos",
+      "ctaText": "Hoy 50% descuento + BONOS de regalo"
+    },
+
+    "guarantee": {
+      "title": "Garantía de confianza",
+      "text": "Si no te gusta, te devolvemos tu dinero."
+    }
+  },
+
+  "images": [
+    "/imagenes/Inicio-01.png",
+    "/imagenes/Inicio-02.webp",
+    "/imagenes/Inicio-03.png",
+    "/imagenes/Inicio-04.webp"
+  ],
+
+  "faq": [
+    { "q": "¿Qué recibiré al comprar este producto?", "a": "Recibirás acceso inmediato al libro digital con recetas y guías." },
+    { "q": "¿Puedo leerlo en mi celular, tablet o computadora?", "a": "Sí, puedes acceder desde cualquier dispositivo." },
+    { "q": "¿Cuándo lo recibo?", "a": "El acceso es inmediato luego del pago." },
+    { "q": "¿Qué pasa si tengo problemas para descargar?", "a": "Te ayudamos por soporte para que accedas sin problemas." },
+    { "q": "¿Necesito experiencia?", "a": "No, está diseñado para principiantes y amantes del café." },
+    { "q": "¿Qué métodos de pago aceptan?", "a": "Hotmart acepta diferentes métodos según tu país." },
+    { "q": "¿Tiene garantía?", "a": "Sí, garantía de satisfacción." }
+  ],
+
+ "bonuses": [
+  {
+    "tag": "BONUS 1 🎁",
+    "subtitle": "Recetario de Barritas",
+    "image": "/imagenes/B1 Barritas.webp",
+    "desc": "Barritas caseras energéticas y saludables para acompañar tu café o merienda."
+  },
+  {
+    "tag": "BONUS 2 🎁",
+    "subtitle": "Recetario de Batidos",
+    "image": "/imagenes/B2 Batidos.webp",
+    "desc": "Batidos cremosos y refrescantes para variar tu rutina diaria con nuevas combinaciones."
+  },
+  {
+    "tag": "BONUS 3 🎁",
+    "subtitle": "Recetario de Galletas",
+    "image": "/imagenes/B3 Galletas.webp",
+    "desc": "Galletas artesanales perfectas para acompañar tus bebidas calientes o frías."
+  },
+  {
+    "tag": "BONUS 4 🎁",
+    "subtitle": "Mixología con Té",
+    "image": "/imagenes/B4 Mix Te.webp",
+    "desc": "Preparaciones gourmet con té: bebidas frías, calientes y combinaciones aromáticas."
+  },
+  {
+    "tag": "BONUS 5 🎁",
+    "subtitle": "Recetario de Postres",
+    "image": "/imagenes/B5 Postres.webp",
+    "desc": "Postres irresistibles para complementar tu experiencia cafetera en casa."
+  },
+  {
+    "tag": "BONUS 6 🎁",
+    "subtitle": "Recetario de Matcha",
+    "image": "/imagenes/B6 Matcha.webp",
+    "desc": "Bebidas y recetas con matcha para ampliar tu carta con opciones modernas y saludables."
+  },
+  {
+    "tag": "BONUS 7 🎁",
+    "subtitle": "Mixología con Café",
+    "image": "/imagenes/B7 Mix Cafe.webp",
+    "desc": "Cocteles y bebidas creativas donde el café se convierte en el protagonista."
+  },
+  {
+    "tag": "BONUS 8 🎁",
+    "subtitle": "Recetario de Jarabes",
+    "image": "/imagenes/B8 Jarabes.webp",
+    "desc": "Jarabes caseros y sabores especiales para personalizar cada bebida como un barista profesional."
+  }
+  ],
+  "extraImages": [
+  "/imagenes/extra 01.webp",
+  "/imagenes/extra 02.webp"
+  ],
+  "whatsapp": {
+  "number": "51987254809",
+  "message": "Hola, quiero información sobre El Club del Café"
+  },
+
+  "extraButtons": [
+    {
+      "text": "Comprar ahora con descuento",
+      "position": "beforeOffer"
+    },
+    {
+      "text": "Aprovechar oferta ahora",
+      "position": "beforeFAQ"
+    }
+]
+}
