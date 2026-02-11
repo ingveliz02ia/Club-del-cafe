@@ -30,7 +30,7 @@
 
     "guarantee": {
       "title": "Garantía de confianza",
-      "text": "Si no te gusta, te devolvemos tu dinero."
+      "text": "Si no te gusta, te devolvemos tu dinero Tienes 7 dias de garantia."
     }
   },
 
@@ -112,11 +112,11 @@
 
   "extraButtons": [
     {
-      "text": "Comprar ahora con descuento",
+      "text": "Compra AHORA con descuento",
       "position": "beforeOffer"
     },
     {
-      "text": "Aprovechar oferta ahora",
+      "text": "Aprovecha LA OFERTA ahora",
       "position": "beforeFAQ"
     }
 ]

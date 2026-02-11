@@ -59,7 +59,7 @@ function renderOfferHTML(data) {
           ${badge ? `<div class="badge">${badge}</div>` : ""}
           ${urgency ? `<div class="urgency">${urgency}</div>` : ""}
 
-          <a class="add-cart" href="${buy}" target="_blank">Comprar ahora</a>
+          <a class="add-cart" href="${buy}" target="_blank">COMPRA AHORA</a>
 
           ${viewing ? `<div class="viewing">👁️ ${viewing}</div>` : ""}
 
