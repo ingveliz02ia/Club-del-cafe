@@ -465,12 +465,9 @@ img{
 
   text-align:center;
   text-decoration:none;
-  color:#2b1b10;
-
+  color:#fff;
   border-radius: 18px;
-
-  background: linear-gradient(135deg,#e5c27a,#caa24a);
-
+  background: linear-gradient(135deg,#4f6f2f,#3f6b2a);
   box-shadow:
     0 14px 32px rgba(202,162,74,.45),
     0 0 0 0 rgba(202,162,74,.6);
@@ -538,53 +535,6 @@ img{
   100%{ left:120%; }
 }
 
-/* =========================
-   ANIMACIÓN BONITA
-========================= */
-
-/* pulso exterior */
-@keyframes pulseGlow{
-  0%{
-    box-shadow:
-      0 12px 30px rgba(202,162,74,.45),
-      0 0 0 0 rgba(202,162,74,.55);
-  }
-  70%{
-    box-shadow:
-      0 12px 30px rgba(202,162,74,.45),
-      0 0 0 20px rgba(202,162,74,0);
-  }
-  100%{
-    box-shadow:
-      0 12px 30px rgba(202,162,74,.45),
-      0 0 0 0 rgba(202,162,74,0);
-  }
-}
-
-
-/* brillo deslizante (efecto premium) */
-.buy-animated::after{
-  content:"";
-  position:absolute;
-  top:0;
-  left:-120%;
-  width:60%;
-  height:100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255,255,255,.45),
-    transparent
-  );
-  transform: skewX(-20deg);
-  animation: shine 3s infinite;
-}
-
-@keyframes shine{
-  0%{ left:-120%; }
-  60%{ left:120%; }
-  100%{ left:120%; }
-}
 
 /* =========================
    WHATSAPP FLOATING
