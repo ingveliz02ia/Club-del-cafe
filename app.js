@@ -344,3 +344,33 @@ function renderExtraButtons(buttons, buyLink){
   renderExtraButtons(data.extraButtons, data.links.buy);
   renderWhatsApp(data.whatsapp);
 })();
+
+/* =========================
+   FACEBOOK PIXEL - HOTMART CLICK
+========================= */
+
+let __fb_hotmart_lock = false;
+
+document.addEventListener("click", (e) => {
+  const link = e.target.closest("a[href]");
+  if (!link) return;
+
+  const url = link.getAttribute("href") || "";
+
+  // detecta Hotmart (incluye pay.hotmart.com)
+  if (!/hotmart\.com|pay\.hotmart\.com/i.test(url)) return;
+
+  // anti doble-click
+  if (__fb_hotmart_lock) return;
+  __fb_hotmart_lock = true;
+  setTimeout(() => { __fb_hotmart_lock = false; }, 1200);
+
+  try {
+    if (window.fbq) {
+      fbq("track", "InitiateCheckout", {
+        content_name: document.title || "Producto",
+        source: "landing"
+      });
+    }
+  } catch (err) {}
+});
